@@ -42,7 +42,7 @@ def main():
     labels = [l.get_label() for l in lines]
     ax1.legend(lines, labels, loc="upper right", framealpha=0.9)
 
-    plt.title("UFS Storage Sustained Full-Disk Write Benchmark (Termux ARM64)", fontsize=14, fontweight="bold", pad=12)
+    plt.title("UFS Storage Sustained Full-Disk Write Benchmark", fontsize=14, fontweight="bold", pad=12)
     plt.tight_layout()
 
     out_png = os.path.splitext(csv_file)[0] + "_curve.png"
